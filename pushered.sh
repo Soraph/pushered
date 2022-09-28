@@ -11,7 +11,7 @@ function ProgressBar {
 	_done=$(printf "%${_done}s")
 	_left=$(printf "%${_left}s")
 
-    printf "\rWorking : [${_done// /#}${_left// /-}] ${_progress}%% [${1}/${2}]"
+    printf "\rWorking : [${_done// /#}${_left// /-}] ${_progress}%%"
 }
 
 source=($(git ls-files -ic --exclude-from=.gitignore))
